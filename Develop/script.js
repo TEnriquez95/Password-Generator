@@ -18,8 +18,8 @@ const symbolCodes = arrayFromLowtoHigh(33, 47)
       .concat(arrayFromLowtoHigh(58, 64))
       .concat(arrayFromLowtoHigh(91, 96))
       .concat(arrayFromLowtoHigh(123, 126));
-console.log(charcode.upperCase);
 // Get references to the #generate element
+
 //var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -31,5 +31,7 @@ function writePassword() {
 
 }
 
+//Prompts after clicking Generate Password
+var passwordLength = confirm?("How many characters do you want for your new password? Please enter a number between 8 and 128.")
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
